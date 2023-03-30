@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookingForm.css">
+    <title>Booking form</title>
+</head>
+<body>
+    <div id="form-container">
+        <div id="heading">
+            <h3>Book Now</h3>
+            <h1>Water Park Booking Form</h1>
+        </div>
+        <form action="D:\think-digital assignment\qrCode.html" method="GET">
+            <div id="input-section">
+                <div id="left-part">
+                    <input type="text" name="name" placeholder="Name">
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="date" name="date" placeholder="Book Date">
+                </div>
+    
+                <div id="right-part">
+                    <select name="packages" id="packages">
+                        <option value="" selected>Select Package</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Offer">Offer</option>
+                    </select>
+                    <select name="number of adults" id="adults">
+                        <option value="" selected>--select number of adults--</option>
+                        <option value="1" class="adultOption">1</option>
+                        <option value="2" class="adultOption">2</option>
+                        <option value="3" class="adultOption">3</option>
+                        <option value="4" class="adultOption">4</option>
+                        <option value="5" class="adultOption">5</option>
+                        <option value="6" class="adultOption">6</option>
+                        <option value="7" class="adultOption">7</option>
+                        <option value="8" class="adultOption">8</option>
+                        <option value="9" class="adultOption">9</option>
+                        <option value="10" class="adultOption">10</option>
+                    </select>
+                    <select name="number of children" id="children">
+                        <option value="" selected>--select number of children--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Book</button>
+        </form>
+        <div id="amounts-container">
+            <div id="sub-total">
+                <div>Subtotal: </div>
+                <div id="subtotal_cal">NaN</div>
+            </div>
+            <div id="GST">
+                <div>GST: 18%</div>
+            </div>
+            <div id="total">
+                <div>Total: </div>
+                <div id="total_cal">NaN</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="D:\think-digital assignment\script.js"></script>
+</body>
+</html>
